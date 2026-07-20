@@ -21,4 +21,6 @@ jobs:
         run: pip install -r backend/requirements.txt
 
       - name: Run Django system check
+        env:
+    SECRET_KEY: ${{ secrets.SECRET_KEY }}
         run: python backend/manage.py check
