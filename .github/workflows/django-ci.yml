@@ -22,5 +22,5 @@ jobs:
 
       - name: Run Django system check
         env:
-    SECRET_KEY: ${{ secrets.SECRET_KEY }}
+             SECRET_KEY: ${{ secrets.SECRET_KEY }}
         run: python backend/manage.py check
